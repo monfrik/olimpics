@@ -44,22 +44,22 @@ $login = $_SESSION["login"];
         </div>
 
         <section class="formConnection modal">
-            <h2 class="formTitle">Вход или Регистрация</h2>
+            <h2 class="modalTitle">Вход или Регистрация</h2>
 
-            <form action="auth.php" class="auth" method="post">
+            <form action="auth.php" class="modalForm" method="post">
                 <div class="formConsist">
-                    <input type="checkbox" id="authType" name="authType" class="checkbox authType" require>
+                    <input type="checkbox" id="authType" name="authType" class="checkbox authType" required>
                     <label for="authType" class="formAuthLabel">У меня уже есть учетная запись</label>
                 </div>
-                <input type="email" class="formConnectionInput"  name="email">
-                <input type="password" class="formConnectionInput"  name="password">
+                <input type="email" class="modalInput"  name="email">
+                <input type="password" class="modalInput"  name="password">
 
                 <div class="formConsist">
-                    <input type="checkbox" name="confirm" id="confirm" class="checkbox permission" require>
+                    <input type="checkbox" name="confirm" id="confirm" class="checkbox permission" required>
                     <label for="confirm" class="formAuthLabel">Согласие на обработку персональных данных</label>
                 </div>
                     
-                <input type="submit" class="buttonAuth" value="Вход/Регистрация">
+                <input type="submit" class="modalButton" value="Вход/Регистрация">
             </form>
         </section>
     </section>
@@ -99,7 +99,7 @@ $login = $_SESSION["login"];
     </section>
 
     <?php if(!empty($login) && empty($tours)):?>
-    <section class="searchЕours">
+    <section class="searchTours">
         <div class="wrapper">
             <h2 class="searchTours_title">Поиск тура</h2>
             <form action="searchTour.php" method="post" class="searchToursWrapper">
@@ -172,27 +172,24 @@ $login = $_SESSION["login"];
                 </tr>
                 <?php endforeach;?>
             </table>
-            <button class="searchToursButton">Получить консультацию</button>
+            <button class="searchToursButton getReview">Получить консультацию</button>
         </div>
     </section>
     <?php endif; ?>
 
-    <section class="formConnection">
-            <h2 class="formTitle">Обратная связь</h2>
-            <form action="auth.php" class="auth" method="post">
-                <div class="formConsist">
-                    <input type="checkbox" id="authType" name="authType" class="checkbox authType" require>
-                    <label for="authType" class="formAuthLabel">У меня уже есть учетная запись</label>
+    <section class="formReview modal">
+            <h2 class="modalTitle">Обратная связь</h2>
+            <form action="sendReview.php" class="modalForm" method="post">
+                <div class="formRow">
+                	<input type="email" class="modalInput" name="email" placeholder="e-mail *">
+                    <input type="text" class="modalInput" name="phone" placeholder="Телефон*">
                 </div>
-                <input type="email" class="formConnectionInput"  name="email">
-                <input type="password" class="formConnectionInput"  name="password">
 
-                <div class="formConsist">
-                    <input type="checkbox" name="confirm" id="confirm" class="checkbox permission" require>
-                    <label for="confirm" class="formAuthLabel">Согласие на обработку персональных данных</label>
-                </div>
-                    
-                <input type="submit" class="buttonAuth" value="Вход/Регистрация">
+                <input type="text" class="modalInput" name="name" placeholder="ФИО*">
+
+                <textarea class="modalInput" name="comment" rows="5" cols="33" placeholder="Коментарий*"></textarea>
+
+                <input type="submit" class="modalButton formReviewButton" value="Отправить">
             </form>
         </section>
 

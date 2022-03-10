@@ -1,7 +1,9 @@
 const personalLinkButton = document.querySelector('.personalLink')
 const username = document.querySelector('.username')
 const formConnection = document.querySelector('.formConnection')
+const formReview = document.querySelector('.formReview')
 const reservationButton = document.querySelector('.reservationButton');
+const getReviewButton = document.querySelector('.getReview');
 const checboxes = document.querySelectorAll('.checkbox')
 const authTypeCheckbox = document.querySelector('.authType');
 const permissionCheckbox = document.querySelector('.permission');
@@ -14,14 +16,15 @@ personalLinkButton.addEventListener('click', function(){
 
 reservationButton?.addEventListener('click', function(){
   if (!username) {
-    displayformConnection();
+    formConnection.style.display = 'block'
   }
 })
 
-function displayformConnection(){
-  formConnection.style.display = 'block'
-  formConnection.style.position = 'fixed'
-}
+getReviewButton?.addEventListener('click', function(){
+  if (username) {
+    formReview.style.display = 'block'
+  }
+})
 
 authTypeCheckbox.addEventListener('change', event => {
   if (event.target.checked) {

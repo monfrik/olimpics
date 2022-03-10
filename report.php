@@ -1,5 +1,5 @@
 <?php
-  $connect = new mysqli('localhost', 'root', '', 'olimpics');
+  $connect = new mysqli('localhost', 'root', 'root', 'olimpics');
   $result = $connect->query("SELECT * FROM `review`");
   $reviews = $result->fetch_all(MYSQLI_ASSOC);
 ?>

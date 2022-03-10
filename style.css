@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+    /* добавил чтобы нормально отображалась ширина у инпутов, когда у них стоят паддинги */
 }
 
 body {
@@ -452,6 +454,7 @@ body {
 }
 
 .modal {
+    position: fixed;
     display: none;
     bottom: 550px;
     background-color: #FFFFFF;
@@ -464,24 +467,27 @@ body {
     z-index: 4;
 }
 
-.formTitle {
+.modalTitle {
     text-align: center;
     margin: 20px 0 50px 0;
     font-size: 30px;
 }
 
-.auth {
+.modalForm {
     /* background-color: #351A1A; */
     display: flex;
-    justify-content: space-between;
     width: 500px;
-    height: 280px;
     margin: auto;
     flex-direction: column;
     font-size: 18px;
 }
 
-.buttonAuth {
+.formRow {
+    display: flex;
+    gap: 70px;
+}
+
+.modalButton {
     height: 45px;
     border: none;
     background-color: #3B4866;
@@ -489,14 +495,25 @@ body {
     border-radius: 10px;
     font-size: 18px;
 }
+
+.formReviewButton {
+    display: inline-block;
+    width: 228px;
+    margin: auto;
+    height: 44px;
+}
+
 .formAuthLabel {
     margin-left: 10px;
 }
 
-.formConnectionInput {
+.modalInput {
     width: 100%;
-    height: 45px;
+    min-height: 45px;
     border-radius: 10px;
+    padding: 11px 15px;
+    border: 1px solid #351A1A;
+    margin-bottom: 32px;
 }
 
 .footer {
