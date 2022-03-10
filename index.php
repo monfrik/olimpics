@@ -181,13 +181,13 @@ $login = $_SESSION["login"];
             <h2 class="modalTitle">Обратная связь</h2>
             <form action="sendReview.php" class="modalForm" method="post">
                 <div class="formRow">
-                	<input type="email" class="modalInput" name="email" placeholder="e-mail *">
-                    <input type="text" class="modalInput" name="phone" placeholder="Телефон*">
+                	<input type="email" class="modalInput" name="email" placeholder="e-mail *" required>
+                    <input type="text" class="modalInput" name="telephone" placeholder="Телефон*" required>
                 </div>
 
-                <input type="text" class="modalInput" name="name" placeholder="ФИО*">
+                <input type="text" class="modalInput" name="name" placeholder="ФИО*" required>
 
-                <textarea class="modalInput" name="comment" rows="5" cols="33" placeholder="Коментарий*"></textarea>
+                <textarea class="modalInput" name="message" rows="5" cols="33" placeholder="Коментарий*" required></textarea>
 
                 <input type="submit" class="modalButton formReviewButton" value="Отправить">
             </form>
