@@ -1,6 +1,6 @@
 <?php
   $connect = new mysqli('localhost', 'root', 'root', 'olimpics');
-  $result = $connect->query("SELECT * FROM `review`");
+  $result = $connect->query("SELECT * FROM `connection`");
   $reviews = $result->fetch_all(MYSQLI_ASSOC);
 ?>
 
@@ -26,10 +26,10 @@
                 </tr>
                 <?php foreach($reviews as $review):?>
                   <tr class="tours_table_row">
-                      <td class="tours_table_cell tours_name"><?= $review['user_name']?></td>
+                      <td class="tours_table_cell tours_name"><?= $review['FIO']?></td>
                       <td class="tours_table_cell tours_from"><?= $review['date']?></td>
                       <td class="tours_table_cell tours_to"><?= $review['email']?></td>
-                      <td class="tours_table_cell tours_date"><?= $review['phone']?></td>
+                      <td class="tours_table_cell tours_date"><?= $review['telephone']?></td>
                       <td class="tours_table_cell tours_nights"><?= $review['message']?></td>
                   </tr>
                 <?php endforeach;?>
