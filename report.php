@@ -1,6 +1,15 @@
 <?php
+  $date = $_GET['date'];
   $connect = new mysqli('localhost', 'root', 'root', 'olimpics');
-  $result = $connect->query("SELECT * FROM `connection`");
+  $query = '';
+
+  if (empty($date)) {
+    $query = "SELECT * FROM `connection`";
+  } else {
+    $query = "SELECT * FROM `connection` WHERE `date` = '$date'";
+  }
+
+  $result = $connect->query($query);
   $reviews = $result->fetch_all(MYSQLI_ASSOC);
 ?>
 
@@ -16,6 +25,11 @@
 <body>
 <section class="search_tours_table">
         <div class="wrapper">
+            <form action="report.php" method="get">
+              <input type="date" name="date" value="<?= $date ?>">
+              <input type="submit" value="Найти">
+            </form>
+
             <table class="tours_table">
                 <tr class="tours_table_row">
                     <th class="tours_table_cell tours_name">ФИО</th>
