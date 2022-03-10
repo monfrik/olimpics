@@ -1,0 +1,564 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-color: #ECECFA;
+}
+
+.wrapper {
+    max-width: 1400px;
+    margin: auto;
+}
+
+.main {
+    position: relative;
+    display: block;
+    height: 1080px;
+    width: 100%;
+    background: url(assets/images/main.png) no-repeat;
+    background-size: cover;
+    border-radius: 0 0 40px 40px;   
+    margin-bottom: 200px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    height: 135px;
+}
+
+.logo {
+    color: #FFFFFF;
+}
+
+.logoName {
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.logoTitle {
+    font-size: 30px;
+    letter-spacing: 12px;
+}
+
+.navPanel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 800px;
+}
+
+.link {
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.navLink {
+    color: #FFFFFF;
+}
+
+.personalАccount {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 250px;
+}
+
+.personalLink {
+    color: #FFFFFF;
+    padding-top: 20px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.username {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 30px;
+}
+
+.description {
+    margin: auto;
+    width: 1400px;
+    margin-top: 160px;
+    color: #FFFFFF;
+}
+
+.lineOne {
+    font-size: 50px;
+}
+
+.lineOneSpan {
+    font-size: 30px;
+}
+
+.lineTwo {
+    font-size: 70px;
+    font-weight: bold;
+    margin-left: 400px;
+}
+
+.lineThree {
+    font-size: 70px;
+    margin-left: 500px;
+    position: relative;
+    bottom: 140px;
+}
+
+.lineThreeSpan {
+    font-size: 200px;
+    font-weight: bold;
+    position: relative;
+}
+
+.countries {
+    position: absolute;
+    padding: 50px 0; 
+    top: 780px;
+    width: 1800px;
+    background-color: rgba(255, 255, 255, 0.6);
+    left: 50%; 
+    transform: translateX(-50%);
+    border-radius: 0 0 20px 20px;
+
+}
+
+.countriesTitle {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.countriesList {
+    width: 1100px;
+    margin: auto;
+}
+
+.france {
+    font-size: 70px;
+}
+
+.spain {
+    font-size: 40px;
+}
+
+.usa {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.china {
+    font-size: 30px;
+    font-weight: 650;
+}
+
+.italy {
+    font-size: 30px;
+}
+
+.turkey {
+    font-size: 20px;
+}
+
+.mexico {
+    font-size: 45px;
+}
+
+.germany {
+    font-size: 45px;
+    font-weight: 500;
+}
+
+.thailand {
+    font-size: 30px;
+}
+
+.united_kingdom {
+    font-size: 50px;
+}
+
+.japan {
+    font-size: 30px;
+    font-weight: 450;
+}
+
+.austria {
+    font-size: 30px;
+}
+
+.greece {
+    font-size: 50px;
+}
+
+.hong_kong {
+    font-size: 30px;
+}
+
+.malaysia {
+    font-size: 30px;
+}
+
+.russia {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.portugal {
+    font-size: 30px;
+}
+
+.canada {
+    font-size: 50px;
+}
+
+.poland {
+    font-size: 30px;
+}
+
+.holland {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.searchTours {
+    background: rgba(255, 255, 255, 0.6);
+    margin: 300px auto 0 auto;
+    padding: 50px 0;
+    border-radius: 0px 0px 40px 40px;
+    /* width: 1700px; */
+    margin-bottom: 50px;
+}
+
+.searchToursTitle {
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+.searchToursWrapper {
+    width: 1000px;
+    margin: auto;
+}
+
+.searchToursSpan {
+    position: absolute;
+    top: -25px;
+    left: 5px;
+    color: #351A1A;
+}
+
+.searchToursSelect {
+    width: 400px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.searchToursRoute {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.searchToursRouteFrom, .searchToursRouteFinish, .searchToursCountNights {
+    position: relative;
+}
+
+.searchToursCountNights {
+    margin-bottom: 40px;
+}
+
+.searchToursButton {
+    width: 220px;
+    height: 45px;
+    border: none;
+    border-radius: 10px;
+    color: #FFFFFF;
+    background-color: #3B4866;
+    font-size: 18px;
+    display: block;
+    margin: auto;
+}
+
+.searchToursTable {
+    background: rgba(255, 255, 255, 0.6);
+    padding: 40px 0;
+    margin-top: 250px;
+    border-radius: 0 0 40px 40px;
+}
+
+.searchToursButton {
+    width: 300px;
+    margin-top: 40px;
+}
+
+.toursTableCell {
+    font-weight: normal;
+}
+
+
+.searchToursTableTitle {
+    font-size: 40px;
+}
+
+.toursTable {
+    margin: 30px 0;
+}
+
+.tours {
+    margin-top: 50px;
+}
+
+.toursTitle {
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+
+.toursTable {
+    width: 100%;
+    border-spacing: 0;
+}
+
+.toursTableRow {
+    height: 36px;
+    /*width: 100%;*/
+}
+.toursTableRow:nth-child(2n) {
+    background-color: #F5EEEE;
+}
+.toursTableCell {
+    text-align: start;
+}
+.toursName {
+    width: 15%;
+}
+.toursPrice {
+    width: 15%;
+}
+.toursTableRow:first-child .toursPrice {
+    text-align: end;
+}
+.toursList {
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    gap: 20px;
+}
+
+.toursItem {
+    background-color: #FFFFFF;
+    border-radius: 20px;
+} 
+
+.toursItemHeader {
+    border-radius: 20px 20px 0 0;
+    position: relative;
+}
+
+.toursItemHeaderWrapper{
+    position: relative;
+    padding: 20px;
+    z-index: 2;
+}
+
+.toursItemImg {
+    border-radius: 20px 20px 0 0;
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.toursItemCountry {
+    font-size: 40px;
+    color: #FFFFFF;
+}
+
+.toursItemCity {
+    font-size: 40px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.toursItemRate {
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+
+.toursItemPrice {
+    font-size: 30px;
+    margin-right: 15px;
+}
+
+
+.toursItemGrade {
+    display: flex;
+    justify-content: end;
+}
+.toursItemGradeStar {
+    margin-left: 10px;
+}
+
+.toursItemDescription {
+    padding: 10px 0;
+}
+
+.toursItemTitle {
+    font-size: 30px;
+    text-align: center;
+}
+
+.toursItemPeriod {
+    font-size: 25px;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    width: 200px;
+    color: #514747;
+}
+
+.reservation {
+    margin-top: 100px;
+    width: 100%;
+    background-image: url(assets/images/reservation.png);
+    background-size: cover;
+    border-radius: 0 0 20px 20px;
+    padding: 100px 0;
+    color: #FFFFFF;
+}
+
+.reservationTitle {
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+
+.reservationDescription {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.reservationButton {
+    display: block;
+    margin: auto;
+    text-align: center;
+    border: 2px solid #FFFFFF;
+    border-radius: 0 0 40px 40px;
+    height: 80px;
+    width: 400px;
+    background: none;
+    font-size: 30px;
+    color: #FFFFFF;
+}
+
+.modal {
+    display: none;
+    bottom: 550px;
+    background-color: #FFFFFF;
+    width: 700px;
+    height: 500px;
+    border: 1px solid #3B4866;
+    left: 50%; 
+    transform: translateX(-50%);
+    top: 200px;
+    z-index: 4;
+}
+
+.formTitle {
+    text-align: center;
+    margin: 20px 0 50px 0;
+    font-size: 30px;
+}
+
+.auth {
+    /* background-color: #351A1A; */
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    height: 280px;
+    margin: auto;
+    flex-direction: column;
+    font-size: 18px;
+}
+
+.buttonAuth {
+    height: 45px;
+    border: none;
+    background-color: #3B4866;
+    color: #FFFFFF;
+    border-radius: 10px;
+    font-size: 18px;
+}
+.formAuthLabel {
+    margin-left: 10px;
+}
+
+.formConnectionInput {
+    width: 100%;
+    height: 45px;
+    border-radius: 10px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 0;
+}
+
+.footerTitle {
+    font-size: 40px;
+    font-weight: normal;
+}
+
+.footerContactsTitle {
+    margin-bottom: 40px;
+}
+
+.footerLink {
+    text-decoration: none;
+    color: #351A1A;
+    font-size: 25px;
+}
+
+.footerContactsLinks {
+    display: flex; 
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.footerContactsMessengers {
+    width: 120px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerContactsLink {
+    margin-bottom: 10px;
+}
+
+.footerMenu {
+    display: flex; 
+    flex-direction: column;
+}
+
+.footerMenuTitle {
+    margin-bottom: 15px;
+}
+
+.footerMenuLinks {
+    display: flex; 
+    flex-direction: column;
+}
+
+.footerMenuLink {
+    margin-bottom: 5px;
+}
+
+.footerDescription {
+    width: 700px;
+}
+
+.footerDescriptionText {
+    color: #605C5C;
+    font-size: 20px;
+}
